@@ -115,7 +115,7 @@ header {
     justify-content: center;
 }
 
-/* RESPONSIVE DESIGN */
+/* HEADER RESPONSIVE DESIGN */
 @media (max-width: 992px) {
     .navbar .links,
     .navbar .action_btn {
@@ -136,4 +136,16 @@ header {
         left: 2rem;
         width: unset;
     }
+}
+
+/* FOOTER */
+.footerbar {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #000;
+    color: white;
+    text-align: center;
+    
 }
