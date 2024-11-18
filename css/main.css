@@ -6,11 +6,13 @@
 }
 
 body {
-    height: 100vh;
+    height: 200vh;
     background-color: #000;
     background-image: url('https://nclark03.github.io/images/backgroundweb.jpg');
     background-size: cover;
     background-position: center;
+    display: flex;
+    flex-direction: column;
 }
 
 li {
@@ -139,13 +141,108 @@ header {
 }
 
 /* FOOTER */
-.footerbar {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
+footer {
     background-color: #000;
-    color: white;
+    color: #fff;
+}
+
+footer a {
+    text-decoration: none;
+    color: #fff;
+}
+
+footer h2 {
+    color: #555;
+    margin-bottom: 1rem;
+}
+
+footer p {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.footer_content {
+    padding: 1rem;
+}
+
+.footer_content .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.footer_content .logo {
+    margin-bottom: 1rem;
+    color: #ffffff;
+    font-size: 46px;
+    font-weight: bold;
+    line-height: 1;
+}
+
+.footer_content .contact .icon {
+    font-size: 24px;
+    margin-right: 5px;
+}
+
+.footer_content .socialmedia {
+    margin-top: 2rem;
+}
+
+.footer_content .socialmedia .icon {
+    font-size: 28px;
+    margin-right: 1rem;
+}
+
+.footer_content .info {
+    margin-left: 3rem;
+}
+
+.copyright {
+    margin-top: 1rem;
+    padding: 1rem;
+    background-color: #555;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* FOOTER RESPONSIVE DESIGN */
+@media (max-width: 992px) {
+    main h1 {
+        margin: 3rem 0;
+        font-size: 3rem;
+    }
+
+    .footer_content .container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 767px) {
+    .footer_content .container {
+        grid-template-columns: 1fr;
+    }
+
+    .footer_content .col {
+        margin: 2rem 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+/* MAIN */
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.pagetitle {
     text-align: center;
-    
+    padding-top: 15px;
+    color: white;
 }
